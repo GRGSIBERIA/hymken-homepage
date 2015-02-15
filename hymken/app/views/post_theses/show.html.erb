@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Past assign:</strong>
+  <%= @post_thesis.past_assign %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @post_thesis.name %>
+</p>
+
+<p>
+  <strong>Quotation:</strong>
+  <%= @post_thesis.quotation %>
+</p>
+
+<p>
+  <strong>View hash:</strong>
+  <%= @post_thesis.view_hash %>
+</p>
+
+<%= link_to 'Edit', edit_post_thesis_path(@post_thesis) %> |
+<%= link_to 'Back', post_theses_path %>

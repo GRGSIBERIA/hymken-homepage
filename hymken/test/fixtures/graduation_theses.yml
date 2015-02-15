@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  past_assign_id: 
+  name: MyString
+  view_hash: MyString
+
+two:
+  past_assign_id: 
+  name: MyString
+  view_hash: MyString

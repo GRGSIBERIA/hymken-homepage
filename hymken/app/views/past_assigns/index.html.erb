@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Past Assigns</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Student</th>
+      <th>Year</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @past_assigns.each do |past_assign| %>
+      <tr>
+        <td><%= past_assign.student %></td>
+        <td><%= past_assign.year %></td>
+        <td><%= link_to 'Show', past_assign %></td>
+        <td><%= link_to 'Edit', edit_past_assign_path(past_assign) %></td>
+        <td><%= link_to 'Destroy', past_assign, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Past assign', new_past_assign_path %>

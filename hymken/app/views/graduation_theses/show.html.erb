@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Past assign:</strong>
+  <%= @graduation_thesis.past_assign %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @graduation_thesis.name %>
+</p>
+
+<p>
+  <strong>View hash:</strong>
+  <%= @graduation_thesis.view_hash %>
+</p>
+
+<%= link_to 'Edit', edit_graduation_thesis_path(@graduation_thesis) %> |
+<%= link_to 'Back', graduation_theses_path %>

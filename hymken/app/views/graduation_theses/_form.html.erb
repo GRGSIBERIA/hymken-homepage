@@ -1,0 +1,29 @@
+<%= form_for(@graduation_thesis) do |f| %>
+  <% if @graduation_thesis.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@graduation_thesis.errors.count, "error") %> prohibited this graduation_thesis from being saved:</h2>
+
+      <ul>
+      <% @graduation_thesis.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :past_assign_id %><br>
+    <%= f.text_field :past_assign_id %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :view_hash %><br>
+    <%= f.text_field :view_hash %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

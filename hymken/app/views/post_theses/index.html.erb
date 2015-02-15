@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Post Theses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Past assign</th>
+      <th>Name</th>
+      <th>Quotation</th>
+      <th>View hash</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @post_theses.each do |post_thesis| %>
+      <tr>
+        <td><%= post_thesis.past_assign %></td>
+        <td><%= post_thesis.name %></td>
+        <td><%= post_thesis.quotation %></td>
+        <td><%= post_thesis.view_hash %></td>
+        <td><%= link_to 'Show', post_thesis %></td>
+        <td><%= link_to 'Edit', edit_post_thesis_path(post_thesis) %></td>
+        <td><%= link_to 'Destroy', post_thesis, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Post thesis', new_post_thesis_path %>

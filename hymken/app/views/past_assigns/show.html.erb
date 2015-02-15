@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Student:</strong>
+  <%= @past_assign.student %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @past_assign.year %>
+</p>
+
+<%= link_to 'Edit', edit_past_assign_path(@past_assign) %> |
+<%= link_to 'Back', past_assigns_path %>
