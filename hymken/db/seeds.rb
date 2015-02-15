@@ -5,3 +5,13 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Grade.create([
+	{name: "学部4年"}, 
+	{name: "修士1年"}, 
+	{name: "修士2年"}, 
+	{name: "博士1年"}, 
+	{name: "博士2年"}, 
+	{name: "博士3年"}])
+
+Course.create([
+	{name: "D"}, {name: "I"}])
